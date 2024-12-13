@@ -1,0 +1,95 @@
+/*
+    1. Mobile | Table
+    2. Desktop
+    3. Responsive Helpers
+*/
+
+/* ==========================================================================
+1. Mobile | Tablet
+========================================================================== */
+
+@media (max-width: 1023px) {
+  .navbar-navbar {
+    display: none;
+  }
+
+  .navbar-brand {
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+
+    .brand-start {
+      width: 90px;
+
+      .navbar-burger {
+        height: 60px;
+        width: 60px;
+      }
+    }
+
+    .is-brand {
+      padding: 0 !important;
+    }
+
+    .brand-end {
+      display: flex;
+      align-items: center;
+      width: 90px;
+      margin-right: 20px;
+    }
+
+    .is-notification {
+      &.is-active,
+      &:hover {
+        .navbar-link {
+          background: transparent !important;
+        }
+
+        .navbar-dropdown {
+          display: block !important;
+        }
+      }
+
+      .navbar-dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        z-index: 3;
+        background: var(--white);
+        border-radius: var(--radius-large);
+        border: 1px solid var(--fade-grey);
+        box-shadow:
+          0 8px 8px rgb(10 10 10 / 10%),
+          0 0 0 1px rgb(10 10 10 / 10%);
+      }
+    }
+  }
+
+  .main-sidebar,
+  .sidebar {
+    display: none;
+  }
+
+  .page-title {
+    margin-top: 0;
+    padding-top: 20px;
+
+    .title-wrap {
+      margin-left: 0;
+    }
+  }
+
+  .is-navbar {
+    .page-title {
+      display: flex !important;
+      margin-top: 0;
+    }
+  }
+
+  .is-stuck {
+    top: 59px !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+    padding-right: 20px !important;
+  }
+}

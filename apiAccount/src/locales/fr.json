@@ -1,0 +1,61 @@
+{
+  "authentication": {
+    "secondFactor": {
+      "subject": "Votre Code 2FA",
+      "header": "Authentification à Deux Facteurs",
+      "message": "Voici votre code 2FA pour un accès sécurisé :",
+      "note": "Ce code expirera dans 10 minutes.",
+      "contactUs": "Si vous n'avez pas demandé cela, veuillez contacter notre équipe de support."
+    },
+    "newLogin": {
+      "subject": "Nouvelle Connexion à Votre Compte",
+      "header": "Nouvelle Connexion Détectée",
+      "message": "Nous avons détecté une nouvelle connexion à votre compte depuis un nouvel appareil ou emplacement.",
+      "contactUs": "Si ce n'était pas vous, veuillez contacter notre équipe de support."
+    }
+  },
+  "signup": {
+    "welcome": {
+      "subject": "Bienvenue sur Xescrow !",
+      "header": "Bienvenue sur Xescrow !",
+      "greeting": "Bonjour {{name}}, nous sommes ravis de vous accueillir parmi nous !",
+      "intro": "Xescrow est là pour vous aider avec des transactions sécurisées et fiables.",
+      "support": "Si vous avez besoin d'aide, n'hésitez pas à contacter notre équipe de support.",
+      "thanks": "Merci de nous avoir rejoints, nous sommes impatients de vous aider à réussir !",
+      "signature": "Cordialement, L'Équipe Xescrow"
+    }
+  },
+  "emailAddress": {
+    "verification": {
+      "subject": "Vérifiez Votre Adresse E-mail",
+      "header": "Vérifiez Votre Adresse E-mail",
+      "message": "Veuillez vérifier votre adresse e-mail en utilisant le code ci-dessous :",
+      "note": "Ce code est valide pendant 30 minutes.",
+      "contactUs": "Si vous n'avez pas demandé cela, veuillez contacter notre équipe de support."
+    }
+  },
+  "password": {
+    "reset": {
+      "subject": "Réinitialiser le mot de passe",
+      "header": "Réinitialiser le mot de passe",
+      "message": "Vous avez demandé à réinitialiser votre mot de passe.",
+      "note": "Utilisez le lien ci-dessous, valable pendant 10 minutes.",
+      "reset": "Réinitialiser le mot de passe",
+      "contactUs": "Si vous n'avez pas fait cette demande, veuillez contacter notre équipe de support."
+    },
+    "update": {
+      "subject": "Le mot de passe a été changé",
+      "header": "Le mot de passe a été changé",
+      "contactUs": "Si vous n'avez pas fait cette demande, veuillez contacter notre équipe de support."
+    }
+  },
+  "wallet": {
+    "secretKey": {
+      "subject": "Demande de clé secrète",
+      "header": "Demande de clé secrète",
+      "message": "Pour voir votre clé secrète, veuillez utiliser le code ci-dessous :",
+      "note": "Ce code expirera dans 10 minutes.",
+      "contactUs": "Si vous n'avez pas fait cette demande, veuillez contacter notre équipe de support."
+    }
+  }
+}

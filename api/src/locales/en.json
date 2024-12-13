@@ -1,0 +1,18 @@
+{
+    "email":{
+      "subscribe":{
+        "subject": "Subscription Confirmation",
+        "welcome": "Welcome!",
+        "thankYou": "Thank you for subscribing. We're excited to have you with us on this journey!",
+        "ignore": "If you did not subscribe, please ignore this email.",
+        "unsubscribe": "Unsubscribe"
+      },
+      "unsubscribe":{
+        "goodbye": "Goodbye!",
+        "subject": "Unsubscribe Confirmation",
+        "successfully": "We're sorry to see you go. You have successfully unsubscribed.",
+        "contactUs": "If you did not request this, please contact us immediately."
+      }
+    }
+   
+  }

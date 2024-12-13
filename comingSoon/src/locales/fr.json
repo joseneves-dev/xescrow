@@ -1,0 +1,58 @@
+
+{
+  "pages":{
+    "signup":{
+      "subtitle":"Votre tiers de confiance P2P sur la blockchain",
+      "description":"Xescrow.app est une plateforme de paiement décentralisée conçue pour des transactions sécurisées. En utilisant un service d'entiercement basé sur des contrats intelligents, elle permet de négocier et d'échanger des actifs en toute confiance, sans avoir besoin d'intermédiaires. Propulsée par la transparence et la sécurité de la technologie blockchain, elle garantit que vos transactions sont sûres, efficaces et fiables.", 
+     "subscribe":{
+        "subscribe": "Inscrivez-vous ci-dessous pour être le premier informé lorsque nous lançons.",
+        "success": "Inscription réussie."
+      },
+      "unsubscribe":{
+        "unsubscribe": "Ajoutez votre e-mail ci-dessous pour vous désabonner.",
+        "success": "Désinscription réussie."
+      }
+    },
+    "notFound":{
+      "title": "Page non trouvée",
+      "heading": "Nous n'avons pas trouvé cette page",
+      "body": "Il semble que nous n'ayons pas pu trouver cette page. Veuillez réessayer ou contacter un administrateur si le problème persiste."
+    }
+  },
+  "form":{
+    "error": "Recharger la page... données invalides"
+  },
+  "token":{
+    "required": "Les données du jeton sont requises",
+    "invalid": "Token invalide"
+  },
+  "language":{
+    "invalid": "Langue invalide"
+  },
+  "emailAddress":{
+    "required": "L'e-mail est requis",
+    "invalid": "E-mail invalide",
+    "unique": "L'e-mail est déjà abonné",
+    "placeholder":"Adresse e-mail"
+  },
+  "server":{
+    "csrf.invalid": "Jeton CSRF invalide.",
+    "too-many-request": "Trop de requêtes au serveur.",
+    "error.unknown": "Erreur inconnue du serveur."
+  },
+  "reCAPTCHA":{
+     "fail": "Échec du reCAPTCHA. Veuillez réessayer."
+  },
+  "action":{
+    "back": "Ramenez-moi en arrière",
+    "subscribe": "S'abonner",
+    "unsubscribe": "Se désabonner"
+  },
+  "components":{
+    "v-reload-prompt":{
+      "offline": "{appName} est hors ligne pour le moment",
+      "need-refresh": "Rafraîchir",
+      "close-button": "Fermer"
+    }
+  }
+}

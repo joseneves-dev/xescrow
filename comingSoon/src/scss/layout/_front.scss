@@ -1,0 +1,775 @@
+/*
+    1. Front Landing
+    2. Centered Mockup section
+    3. Pricing
+    4. Icon box card
+    5. Dotted BG
+    7. Media Queries
+*/
+
+/* ==========================================================================
+1. Front Landing
+========================================================================== */
+.view-wrapper {
+  overflow-x: hidden;
+
+  .container {
+    max-width: 1140px !important;
+  }
+
+  .light-image-l {
+    display: inline-block !important;
+  }
+
+  .dark-image-l {
+    display: none !important;
+  }
+
+  .light-image-block-l {
+    display: block !important;
+  }
+
+  .dark-image-block-l {
+    display: none !important;
+  }
+}
+
+.is-dark {
+  .view-wrapper {
+    background: color-mix(in oklab, var(--landing-xxx));
+
+    .light-image-l {
+      display: none !important;
+    }
+
+    .dark-image-l {
+      display: inline-block !important;
+    }
+
+    .light-image-block-l {
+      display: none !important;
+    }
+
+    .dark-image-block-l {
+      display: block !important;
+    }
+
+    #backtotop {
+      &.visible {
+        a {
+          background: var(--primary) !important;
+          color: var(--smoke-white) !important;
+        }
+      }
+    }
+  }
+}
+
+.section-hero {
+  position: relative;
+
+  &.is-left,
+  &.is-right {
+    .hero-body {
+      h1 {
+        max-width: 480px;
+      }
+
+      h3 {
+        max-width: 520px;
+      }
+    }
+  }
+
+  &.is-centered {
+    .hero-body {
+      .columns {
+        padding-top: 6rem;
+      }
+
+      .title,
+      .subtitle,
+      .switch-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h1 {
+        max-width: 880px;
+      }
+
+      h3 {
+        max-width: 520px;
+      }
+
+      .hero-mockup {
+        max-width: 640px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &.is-left,
+  &.is-centered {
+    .hexagon {
+      position: absolute;
+      animation: rotating 15s infinite;
+      animation-timing-function: linear;
+
+      &.hexagon-1 {
+        top: -180px;
+        left: -180px;
+        height: 450px;
+        width: 450px;
+        transform: rotate(39deg);
+      }
+
+      &.hexagon-2 {
+        bottom: 80px;
+        right: 80px;
+        height: 360px;
+        width: 360px;
+        transform: rotate(75deg);
+        animation-delay: 2s;
+      }
+
+      &.hexagon-3 {
+        bottom: 40px;
+        left: 40px;
+        height: 190px;
+        width: 190px;
+        transform: rotate(95deg);
+        animation-delay: 0.5s;
+      }
+
+      &.hexagon-4 {
+        top: -155px;
+        left: 50%;
+        height: 230px;
+        width: 230px;
+        transform: rotate(135deg);
+        animation-delay: 1s;
+      }
+    }
+  }
+
+  &.is-right {
+    .hexagon {
+      position: absolute;
+      animation: rotating 15s infinite;
+      animation-timing-function: linear;
+
+      &.hexagon-1 {
+        top: -180px;
+        right: -180px;
+        height: 450px;
+        width: 450px;
+        transform: rotate(39deg);
+      }
+
+      &.hexagon-2 {
+        bottom: 80px;
+        left: 80px;
+        height: 360px;
+        width: 360px;
+        transform: rotate(75deg);
+        animation-delay: 2s;
+      }
+
+      &.hexagon-3 {
+        bottom: 40px;
+        right: 40px;
+        height: 190px;
+        width: 190px;
+        transform: rotate(95deg);
+        animation-delay: 0.5s;
+      }
+
+      &.hexagon-4 {
+        top: -155px;
+        left: 50%;
+        height: 230px;
+        width: 230px;
+        transform: rotate(135deg);
+        animation-delay: 1s;
+      }
+    }
+  }
+
+  .hero-body {
+    .buttons {
+      .button {
+        min-height: 44px;
+        min-width: 140px;
+      }
+    }
+
+    .hero-mockup {
+      box-shadow: var(--light-box-shadow);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+    }
+  }
+}
+
+.is-dark {
+  .section-hero {
+    &.is-left,
+    &.is-right,
+    &.is-centered {
+
+      .hexagon {
+        opacity: 0.3;
+      }
+
+      .hero-body {
+        .hero-mockup {
+          border-color: color-mix(in oklab, var(--landing-xxx), white 8%);
+        }
+
+        .buttons {
+          .button {
+            &:not(.is-outlined) {
+              background: var(--primary) !important;
+              border-color: var(--primary) !important;
+
+              &:hover {
+                box-shadow: var(--primary-box-shadow) !important;
+              }
+            }
+
+            &.is-outlined {
+              color: var(--primary) !important;
+              border-color: var(--primary) !important;
+
+              &:hover {
+                background: var(--primary) !important;
+                color: var(--white) !important;
+                box-shadow: var(--primary-box-shadow) !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+2. Landing header
+========================================================================== */
+
+.view-wrapper {
+  overflow-x: hidden;
+
+  .container {
+    max-width: 1140px !important;
+  }
+
+  .light-image-l {
+    display: inline-block !important;
+  }
+
+  .dark-image-l {
+    display: none !important;
+  }
+
+  .light-image-block-l {
+    display: block !important;
+  }
+
+  .dark-image-block-l {
+    display: none !important;
+  }
+}
+
+.is-dark {
+  .view-wrapper  {
+    background: color-mix(in oklab, var(--landing-xxx));
+
+    .light-image-l {
+      display: none !important;
+    }
+
+    .dark-image-l {
+      display: inline-block !important;
+    }
+
+    .light-image-block-l {
+      display: none !important;
+    }
+
+    .dark-image-block-l {
+      display: block !important;
+    }
+
+    #backtotop {
+      &.visible {
+        a {
+          background: var(--primary) !important;
+          color: var(--smoke-white) !important;
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+3. Pricing
+========================================================================== */
+
+.pricing-wrapper {
+  font-family: var(--font);
+  font-weight: 400;
+  color: #9f9f9f;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  max-width: 1040px;
+  margin: 0 auto;
+
+  .pricing-plan {
+    width: calc(33.3% - 1.5rem);
+    height: auto;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 0.65rem;
+    display: inline-block;
+    padding: 24px;
+    text-align: center;
+    position: relative;
+    margin: 0 0.75rem;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: var(--light-box-shadow);
+    }
+
+    &.is-featured {
+      border-color: var(--primary);
+
+      &::before {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 64px 64px 0 0;
+        border-color: var(--primary) transparent transparent transparent;
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+      }
+
+      &::after {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        content: '\f00c';
+        color: var(--white);
+        position: absolute;
+        left: 11px;
+        top: 11px;
+        text-shadow: 0 0 2px var(--primary);
+        font-size: 1rem;
+      }
+    }
+
+    .name {
+      color: var(--dark-text);
+      font-weight: 300;
+      font-size: 2rem;
+      margin-top: -5px;
+    }
+
+    img {
+      max-width: 55px;
+      margin: 0 auto;
+    }
+
+    .price {
+      font-size: 1.8rem;
+      margin: 0.75rem 0 1.5rem 0;
+      font-weight: bold;
+
+      &::after {
+        content: ' /per month';
+        font-size: 1rem;
+        font-weight: normal;
+        color: var(--light-text);
+      }
+    }
+
+    hr {
+      background-color: var(--border);
+      border: none;
+      height: 1px;
+    }
+
+    .trial {
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 2px 21px 2px 21px;
+      color: var(--primary);
+      border: 1px solid var(--border);
+      display: inline-block;
+      border-radius: 15px;
+      background-color: var(--white);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      margin-top: 29px;
+    }
+
+    li {
+      margin-bottom: 15px;
+
+      &::before {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        content: '\f00c';
+        font-size: 0.9rem;
+        color: var(--success);
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+.is-dark {
+  .pricing-wrapper {
+    .pricing-plan {
+      border-color: color-mix(in oklab, var(--landing-xxx), white 12%);
+      background: color-mix(in oklab, var(--landing-xxx), white 6%);
+
+      &.is-featured {
+        border-color: var(--primary);
+
+        &::before {
+          border-color: var(--primary) transparent transparent transparent;
+        }
+      }
+
+      .name {
+        color: var(--dark-dark-text);
+      }
+
+      .price {
+        color: var(--white);
+      }
+
+      .trial {
+        color: var(--primary);
+        border-color: color-mix(in oklab, var(--landing-xxx), white 12%);
+        background: color-mix(in oklab, var(--landing-xxx), white 2%);
+      }
+
+      hr {
+        background: color-mix(in oklab, var(--landing-xxx), white 12%);
+      }
+
+      li {
+        color: var(--light-text);
+
+        strong {
+          color: var(--white);
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+4. Icon box card
+========================================================================== */
+
+.card-icon-box {
+  border: 1px solid var(--border);
+  border-radius: 0.65rem;
+  box-shadow: none;
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: var(--light-box-shadow);
+  }
+
+  .v-icon {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.is-dark {
+  .card-icon-box {
+    border-color: color-mix(in oklab, var(--landing-xxx), white 12%);
+    background: color-mix(in oklab, var(--landing-xxx), white 4%);
+
+    .v-icon {
+      background: transparent;
+      border: 2px solid color-mix(in oklab, var(--landing-xxx), white 12%);
+    }
+
+    .title {
+      color: var(--white);
+    }
+  }
+}
+
+/* ==========================================================================
+5. Dotted BG
+========================================================================== */
+
+.has-bg-dots {
+  background-image: radial-gradient(circle, #f0f4ff 10%, transparent 15%),
+    radial-gradient(circle, #f0f4ff 10%, transparent 15%);
+  background-size: 50px 50px;
+  background-position:
+    0 0,
+    0 0;
+}
+
+.is-dark {
+  .has-bg-dots {
+    background-image: radial-gradient(
+        circle,
+        color-mix(in oklab, var(--landing-xxx), white 4%) 10%,
+        transparent 15%
+      ),
+      radial-gradient(circle, color-mix(in oklab, var(--landing-xxx), white 4%) 10%, transparent 15%);
+    background-size: 50px 50px;
+    background-position:
+      0 0,
+      0 0;
+  }
+}
+
+/* ==========================================================================
+7. Media Queries
+========================================================================== */
+
+@media (max-width: 767px) {
+  .section-hero {
+    &.is-left,
+    &.is-right,
+    &.is-centered {
+      text-align: center;
+
+      .hexagon {
+        &.hexagon-1 {
+          top: -110px;
+          left: -80px;
+          height: 230px;
+          width: 230px;
+        }
+
+        &.hexagon-2 {
+          bottom: 45px;
+          right: -80px;
+          height: 220px;
+          width: 220px;
+        }
+
+        &.hexagon-3 {
+          bottom: 50%;
+          left: -110px;
+        }
+
+        &.hexagon-4 {
+          top: -165px;
+          left: 70%;
+          height: 230px;
+          width: 230px;
+        }
+      }
+    }
+
+    .hero-body {
+      .title,
+      .subtitle {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .title {
+        font-size: 2.5rem;
+      }
+
+      .buttons {
+        justify-content: center;
+        margin-bottom: 2rem;
+      }
+
+      .switch-wrapper {
+        margin: 0 auto;
+      }
+
+      .hero-mockup {
+        max-width: 100% !important;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .pricing-wrapper {
+    flex-wrap: wrap;
+
+    .pricing-plan {
+      width: calc(100% - 1.5rem);
+
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .section-hero {
+    &.is-centered {
+      text-align: center;
+
+      .hexagon {
+        &.hexagon-2 {
+          bottom: 45px;
+          right: -80px;
+        }
+
+        &.hexagon-3 {
+          bottom: 50%;
+          left: -110px;
+        }
+      }
+    }
+
+    &.is-left {
+      text-align: center;
+
+      .hexagon {
+        &.hexagon-2 {
+          bottom: 45px;
+          right: -80px;
+        }
+
+        &.hexagon-3 {
+          bottom: 50%;
+          left: -110px;
+        }
+      }
+    }
+
+    &.is-right {
+      text-align: center;
+
+      .hexagon {
+        &.hexagon-2 {
+          bottom: 45px;
+          right: -80px;
+        }
+
+        &.hexagon-3 {
+          bottom: 50%;
+          left: -110px;
+        }
+      }
+    }
+
+    .hero-body {
+      .title,
+      .subtitle {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .buttons {
+        justify-content: center;
+        margin-bottom: 2rem;
+      }
+
+      .switch-wrapper {
+        margin: 0 auto;
+      }
+
+      .hero-mockup {
+        max-width: 640px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .card-icon-boxes {
+    display: flex;
+
+    .column {
+      min-width: 50%;
+      width: 50%;
+    }
+  }
+}
+
+/* ==========================================================================
+  9. Sections
+  ========================================================================== */
+
+.section {
+  position: relative;
+
+  &.section-focus {
+    background: color-mix(in oklab, var(--widget-grey), black 1%);
+  }
+
+  .section-title {
+    padding: 40px 0;
+
+    h2 {
+      font-family: var(--font-alt);
+      margin-bottom: 6px;
+      font-weight: 300;
+    }
+
+    h4 {
+      font-family: var(--font);
+      color: var(--light-text);
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+  }
+
+  .section-feature-description {
+    font-size: 1.2rem;
+  }
+
+  .side-feature {
+    h2 {
+      font-family: var(--font);
+      font-weight: 300;
+    }
+  }
+}
+
+/* ==========================================================================
+  10. Sections Dark mode
+  ========================================================================== */
+
+.is-dark {
+  .view-wrapper {
+    .section {
+      &.section-focus {
+        background: color-mix(in oklab, var(--landing-xxx), white 2%);
+      }
+
+      .section-title {
+        h2 {
+          color: var(--dark-dark-text);
+        }
+      }
+
+      .side-feature {
+        h2,
+        h3 {
+          color: var(--dark-dark-text);
+        }
+      }
+    }
+  }
+}

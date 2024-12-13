@@ -1,0 +1,112 @@
+/* ==========================================================================
+1. View Wrapper
+========================================================================== */
+
+.view-wrapper {
+  &.view-wrapper-full {
+    width: 100%;
+    margin-left: 0;
+
+    &.is-pushed-block {
+      margin-left: 280px;
+      width: calc(100% - 280px);
+
+      .is-stuck {
+        margin-left: 280px;
+        width: calc(100% - 280px);
+      }
+    }
+  }
+}
+
+.view-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  transition: all 0.3s; // transition-all test
+
+  &.is-pushed-full {
+    margin-left: 320px;
+    width: calc(100% - 320px);
+
+    .is-stuck {
+      margin-left: 320px;
+      width: calc(100% - 320px);
+    }
+  }
+
+  &.is-pushed-messages {
+    margin-left: 160px !important;
+    width: calc(100% - 160px) !important;
+  }
+
+  .is-stuck {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 80px;
+    width: calc(100% - 80px);
+    z-index: 14;
+  }
+}
+
+.is-dark {
+  .view-wrapper {
+    background: color-mix(in oklab, var(--dark-sidebar), white 10%);
+    border-color: color-mix(in oklab, var(--dark-sidebar), white 10%);
+  }
+}
+
+/* ==========================================================================
+2. Page Content
+========================================================================== */
+
+.page-content-wrapper {
+  width: 1024px;
+  margin: 3% auto;
+}
+
+@media (max-width: 1023px) {
+  .page-content-wrapper {
+    width: auto !important;
+    margin: 1% auto; /* Remove a margem de 100px */
+  }
+}
+
+/* ==========================================================================
+4. Page Title
+========================================================================== */
+
+.is-navbar {
+  .page-title {
+    display: none;
+    margin-bottom: 0;
+  }
+}
+
+.page-title {
+  position: relative;
+  height: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 10;
+
+  .title-wrap {
+    margin-left: 1rem;
+
+    h1 {
+      text-align: left;
+      margin-bottom: 0;
+    }
+
+    p {
+      line-height: 1;
+      color: var(--light-text);
+      font-size: 1.1rem;
+    }
+  }
+}

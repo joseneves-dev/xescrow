@@ -1,0 +1,227 @@
+
+/*
+    1. Titles
+    2. Helpers
+    3. Divider alt
+    4. Dark mode images
+*/
+
+/* ==========================================================================
+1. Titles
+========================================================================== */
+
+.title,
+.subtitle {
+  &.light-mb {
+    margin-bottom: 10px;
+  }
+
+  &.no-mb {
+    margin-bottom: 0;
+  }
+
+  &.has-margin-top {
+    margin-top: 20px;
+  }
+
+  &.has-margin-top-lg {
+    margin-top: 50px;
+  }
+
+  &.is-purple {
+    color: var(--primary);
+  }
+
+  &.is-light {
+    color: var(--white);
+  }
+}
+
+var {
+  font-style: inherit;
+}
+
+.has-text-centered {
+  text-align: center;
+}
+
+/* ==========================================================================
+2. Helpers
+========================================================================== */
+
+.is-flex-wrapped {
+  flex-wrap: wrap !important;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.is-vhidden {
+  visibility: hidden !important;
+}
+
+.no-click {
+  pointer-events: none !important;
+}
+
+.is-disabled {
+  pointer-events: none;
+  opacity: 0.4;
+  cursor: default !important;
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-mb {
+  margin-bottom: 0 !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.is-green {
+  color: var(--success);
+}
+
+.is-purple {
+  color: var(--primary);
+}
+
+.has-slimscroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 6px !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+  }
+}
+
+.has-slimscroll-sm {
+  &::-webkit-scrollbar {
+    width: 3px !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+  }
+}
+
+.dark-text {
+  color: var(--dark-text);
+}
+
+.light-text {
+  color: var(--light-text);
+}
+
+.success-text {
+  color: var(--success);
+}
+
+.info-text {
+  color: var(--info);
+}
+
+.warning-text {
+  color: var(--warning);
+}
+
+.danger-text {
+  color: var(--danger);
+}
+
+.inverted-text {
+  color: var(--smoke-white);
+}
+
+/* ==========================================================================
+3. Divider alt
+========================================================================== */
+
+.divider {
+  display: flex;
+  color: var(--muted-grey);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+
+  &::before,
+  &::after {
+    content: '';
+    flex: 1;
+  }
+
+  &.line {
+    align-items: center;
+    margin: 1em -1em;
+
+    &::before,
+    &::after {
+      height: 1px;
+      margin: 0 1em;
+    }
+  }
+
+  &.one-line {
+    &::before,
+    &::after {
+      background: color-mix(in oklab, var(--fade-grey), black 5%);
+    }
+  }
+}
+
+/* ==========================================================================
+4. Dark mode images
+========================================================================== */
+
+.light-image {
+  display: inline-block !important;
+}
+
+.dark-image {
+  display: none !important;
+}
+
+.light-image-block {
+  display: block !important;
+}
+
+.dark-image-block {
+  display: none !important;
+}
+
+.is-dark {
+  .light-image {
+    display: none !important;
+  }
+
+  .dark-image {
+    display: inline-block !important;
+  }
+
+  .light-image-block {
+    display: none !important;
+  }
+
+  .dark-image-block {
+    display: block !important;
+  }
+}

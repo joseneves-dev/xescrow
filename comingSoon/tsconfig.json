@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "removeComments": true,
+    "importHelpers": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "useDefineForClassFields": true,
+    "skipLibCheck": true,
+    "lib": ["esnext", "dom"],
+    "types": ["vite/client", "@intlify/unplugin-vue-i18n/messages"],
+    "paths": {
+      "/@src/*": ["./src/*"],
+      "/@userStores/*": ["./src/stores/user/*"],
+      "/@appStores/*": ["./src/stores/app/*"]
+    }
+  },
+  "include": [
+    "types/**/*.d.ts",
+    "types/imports.d.ts",
+    "types/components.d.ts",
+    "src/**/*.js",
+    "src/**/*.ts",
+    "src/**/*.vue",
+    "*.config.ts"
+  ],
+  "exclude": ["bulma-colors.ts"]
+}

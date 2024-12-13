@@ -1,0 +1,17 @@
+{
+  "email":{
+    "subscribe":{
+      "subject": "Confirmación de Suscripción",
+      "welcome": "¡Bienvenido!",
+      "thankYou": "Gracias por suscribirte. ¡Estamos emocionados de tenerte con nosotros en este viaje!",
+      "ignore": "Si no te suscribiste, por favor ignora este correo electrónico.",
+      "unsubscribe": "Darse de baja"
+    },
+    "unsubscribe":{
+      "goodbye": "¡Adiós!",
+      "subject": "Confirmación de Baja",
+      "successfully": "Lamentamos verte partir. Te has dado de baja con éxito.",
+      "contactUs": "Si no solicitaste esto, por favor contáctanos inmediatamente."
+    }
+  }
+}

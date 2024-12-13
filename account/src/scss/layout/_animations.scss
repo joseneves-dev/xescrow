@@ -1,0 +1,132 @@
+/* ==========================================================================
+1. Base Class
+========================================================================== */
+.animated {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.no-transition * {
+  transition-property: none !important;
+  transition-duration: 0 !important;
+}
+
+/* ==========================================================================
+3. Infinite rotate
+========================================================================== */
+
+@keyframes rotating {
+  from {
+    transform: rotate(calc(var(--transform-direction) * 0deg));
+  }
+
+  to {
+    transform: rotate(calc(var(--transform-direction) * 360deg));
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(calc(var(--transform-direction) * 0deg));
+  }
+
+  to {
+    transform: rotate(calc(var(--transform-direction) * 360deg));
+  }
+}
+
+.rotating {
+  animation: rotating 2s linear infinite;
+}
+
+/* ==========================================================================
+5. Fade In Down
+========================================================================== */
+
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, -20px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, -20px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.preFadeInDown {
+  opacity: 0;
+}
+
+.fadeInDown {
+  opacity: 0;
+  animation-name: fadeInDown;
+}
+
+/* ==========================================================================
+6. Fade In Left
+========================================================================== */
+
+@keyframes fadeInLeft {
+  from {
+    transform: translate3d(20px, 0, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translate3d(20px, 0, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.preFadeInLeft {
+  opacity: 0;
+}
+
+.fadeInLeft {
+  opacity: 0;
+  animation-name: fadeInLeft;
+}
+
+/* ==========================================================================
+15. View transition
+========================================================================== */
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+}
+
+::view-transition-old(root),
+.is-dark::view-transition-new(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root),
+.is-dark::view-transition-old(root) {
+  z-index: 9999;
+}

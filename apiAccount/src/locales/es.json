@@ -1,0 +1,61 @@
+{
+  "authentication": {
+    "secondFactor": {
+      "subject": "Tu Código 2FA",
+      "header": "Autenticación de Dos Factores",
+      "message": "Aquí tienes tu código 2FA para un acceso seguro:",
+      "note": "Este código expirará en 10 minutos.",
+      "contactUs": "Si no solicitaste esto, por favor, contacta a nuestro equipo de soporte."
+    },
+    "newLogin": {
+      "subject": "Nuevo Inicio de Sesión en tu Cuenta",
+      "header": "Nuevo Inicio de Sesión Detectado",
+      "message": "Hemos detectado un nuevo inicio de sesión en tu cuenta desde un nuevo dispositivo o ubicación.",
+      "contactUs": "Si no fuiste tú, por favor, contacta a nuestro equipo de soporte."
+    }
+  },
+  "signup": {
+    "welcome": {
+      "subject": "¡Bienvenido a Xescrow!",
+      "header": "¡Bienvenido a Xescrow!",
+      "greeting": "Hola {{name}}, ¡estamos emocionados de tenerte con nosotros!",
+      "intro": "Xescrow está aquí para ayudarte con transacciones seguras y fiables.",
+      "support": "Si necesitas ayuda, no dudes en contactar a nuestro equipo de soporte.",
+      "thanks": "¡Gracias por unirte a nosotros, esperamos apoyarte en tu éxito!",
+      "signature": "Saludos cordiales, El Equipo de Xescrow"
+    }
+  },
+  "emailAddress": {
+    "verification": {
+      "subject": "Verifica Tu Dirección de Correo Electrónico",
+      "header": "Verifica Tu Dirección de Correo Electrónico",
+      "message": "Por favor, verifica tu dirección de correo electrónico usando el código a continuación:",
+      "note": "Este código es válido por 30 minutos.",
+      "contactUs": "Si no solicitaste esto, por favor, contacta a nuestro equipo de soporte."
+    }
+  },
+  "password": {
+    "reset": {
+      "subject": "Restablecer contraseña",
+      "header": "Restablecer contraseña",
+      "message": "Has solicitado restablecer tu contraseña.",
+      "note": "Utiliza el enlace a continuación, válido durante 10 minutos.",
+      "reset": "Restablecer contraseña",
+      "contactUs": "Si no solicitaste esto, por favor contacta a nuestro equipo de soporte."
+    },
+    "update": {
+      "subject": "La contraseña ha sido cambiada",
+      "header": "La contraseña ha sido cambiada",
+      "contactUs": "Si no solicitaste esto, por favor contacta a nuestro equipo de soporte."
+    }
+  },
+  "wallet": {
+    "secretKey": {
+      "subject": "Solicitud de clave secreta",
+      "header": "Solicitud de clave secreta",
+      "message": "Para ver su clave secreta, por favor use el código a continuación:",
+      "note": "Este código expirará en 10 minutos.",
+      "contactUs": "Si usted no solicitó esto, por favor contacte a nuestro equipo de soporte."
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.notyf {
+  padding-bottom: 40px !important;
+  .notyf__toast {
+    max-width: 500px !important;
+    .notyf__wrapper {
+      .notyf__icon {
+        display: none !important;
+      }
+      .notyf__message {
+        font-family: var(--font);
+        color: var(--white) !important;
+      }
+    }
+    .notyf__ripple{
+      width: 600px !important;      
+    }
+  }
+}
+
+.disable-notyf {
+  .notyf {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1;
+    margin: -1;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1;
+    outline: 0;
+  }
+}

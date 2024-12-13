@@ -1,0 +1,490 @@
+{
+  "footer": {
+    "description": "Xescrow.app es una plataforma de pagos descentralizada diseñada para transacciones seguras, impulsada por la transparencia y seguridad de la blockchain de Solana.",
+    "menu": {
+      "subscribe": "Suscribirse"
+    },
+    "copyright": "Copyright {year}, Xescrow - Transacciones P2P. Todos los derechos reservados."
+  },
+  "menu": {
+    "dashboard": "Panel",
+    "wallet": "-",
+    "account": "Cuenta",
+    "escrow": "Escrow",
+    "helpCenter": "Centro de ayuda",
+    "back": "Atrás"
+  },
+  "subMenu": {
+    "details": "Detalles",
+    "contacts": "Contactos",
+    "security": "Seguridad",
+    "settings": "Configuración",
+    "notifications": "Notificaciones"
+  },
+  "pages": {
+    "signup": {
+      "title": "Hola",
+      "subtitle": "Regístrate ahora y experimenta la fiabilidad de la blockchain",
+      "success": "Registro exitoso",
+      "invalid": "Inválido",
+      "notAvailable": "No disponible en este momento, inténtalo más tarde"
+    },
+    "login": {
+      "title": "Bienvenido de nuevo",
+      "subtitle": "Por favor, inicia sesión para continuar.",
+      "invalid": "Inicio de sesión inválido",
+      "notAvailable": "No disponible en este momento, inténtalo más tarde"
+    },
+    "forgotPassword": {
+      "title": "Olvidé mi contraseña",
+      "subtitle": "Solicita una nueva actualización de contraseña",
+      "success": "Correo electrónico con instrucciones enviado exitosamente",
+      "sent": {
+        "title": "Correo enviado con éxito",
+        "subtitle": "Sigue las instrucciones que enviamos a tu correo para restablecer tu contraseña"
+      }
+    },
+    "resetPassword": {
+      "title": "Restablecer contraseña",
+      "subtitle": "Establece una nueva contraseña para tu cuenta",
+      "success": "Contraseña actualizada exitosamente"
+    },
+    "secondFactor": {
+      "invalid": "2FA inválido",
+      "notAvailable": "No disponible en este momento, inténtalo más tarde",
+      "notification": {
+        "error": "Error al enviar la notificación"
+      },
+      "token": {
+        "error": "Error al enviar el token"
+      },
+      "app": {
+        "sendNotification": "Enviar nueva notificación",
+        "check": "Revisa tu aplicación",
+        "sent": "Hemos enviado una notificación a la aplicación..."
+      },
+      "emailAddress": {
+        "sendToken": "Enviar un nuevo token al correo electrónico ({emailAddress})",
+        "check": "Revisa tu correo electrónico",
+        "sent": "Hemos enviado un correo electrónico con un token de 6 dígitos..."
+      },
+      "phoneNumber": {
+        "sendToken": "Enviar un nuevo token al número de teléfono ({phoneNumber})",
+        "check": "Revisa tu teléfono",
+        "sent": "Hemos enviado un mensaje de texto con un token de 6 dígitos..."
+      }
+    },
+    "help": {},
+    "dashboard": {
+      "welcome": "Bienvenido de nuevo, {userName}"
+    },
+    "wallet": {
+      "create": {
+        "title": "-",
+        "subtitle": "-",
+        "new": {
+          "title": "-"
+        },
+        "connect": {
+          "title": "-"
+        },
+        "import": {
+          "title": "-"
+        }
+      },
+      "resume": {
+        "connected": "-",
+        "disconnected": "-"
+      }
+    },
+    "notFound": {
+      "title": "Página no encontrada",
+      "heading": "No pudimos encontrar esa página",
+      "body": "Parece que no pudimos encontrar esa página. Por favor, inténtalo de nuevo o contacta a un administrador si el problema persiste."
+    },
+    "underConstruction": "Esta página está en construcción",
+    "personal": {
+      "start": {
+        "heading": "Por favor confirma tu cuenta",
+        "body": "Hola {name}, ¡comienza a verificar tu cuenta! Aprovecha al máximo Xescrow.app. Verificar tu cuenta permitirá un procesamiento más rápido en caso de disputas."
+      },
+      "continue": {
+        "heading": "Continúa con la verificación de tu cuenta",
+        "body": "Hola {name}, tienes una verificación pendiente para tu cuenta. Aprovecha al máximo Xescrow.app. Verificar tu cuenta permitirá un procesamiento más rápido en caso de disputas."
+      },
+      "review": {
+        "heading": "Revisa tus documentos",
+        "body": "Hola {name}, ¡tienes documentos pendientes! Aprovecha al máximo Xescrow.app. Verificar tu cuenta permitirá un procesamiento más rápido en caso de disputas."
+      },
+      "identityStatement": {
+        "title": "Declaración de identidad",
+        "subtitle": "La declaración de identidad es un documento que confirma tu estado de verificación e incluye tu información personal, como nombre y dirección."
+      },
+      "title": "Información Personal",
+      "subtitle": "Añade, actualiza o elimina tus contactos",
+      "identification": "Identificación",
+      "address": "Dirección"
+    },
+    "notifications": {
+      "title": "Notificaciones",
+      "subtitle": "Actualiza las notificaciones de tu cuenta",
+      "account": {
+        "title": "Notificaciones de la cuenta",
+        "subtitle": "Así es como te reconocerán los demás",
+        "updated": "Las notificaciones de la cuenta se han actualizado",
+        "verifications": {
+          "title": "Verificaciones",
+          "subtitle": "Recibe advertencias sobre verificaciones pendientes"
+        },
+        "login": {
+          "title": "Inicio de sesión",
+          "subtitle": "Recibe advertencias cada vez que alguien inicie sesión en tu cuenta"
+        }
+      },
+      "lowPriority": {
+        "title": "Notificaciones de baja prioridad:",
+        "subtitle": "Mantente al tanto de nuevas actualizaciones y funciones que lanzamos",
+        "updated": "Las notificaciones de la cuenta se han actualizado",
+        "updates": {
+          "title": "Actualizaciones",
+          "subtitle": "Recibe actualizaciones sobre nosotros"
+        }
+      },
+      "marketing": {
+        "title": "Notificaciones de marketing",
+        "subtitle": "Recibe información sobre ofertas exclusivas y socios",
+        "updated": "Las notificaciones de marketing se han actualizado",
+        "emailAddress": {
+          "title": "Notificaciones por correo electrónico",
+          "subtitle": "Recibe actualizaciones por correo electrónico"
+        },
+        "phoneNumber": {
+          "title": "Notificaciones por mensaje de texto",
+          "subtitle": "Recibe actualizaciones por mensaje de texto"
+        },
+        "app": {
+          "title": "Notificaciones de la aplicación",
+          "subtitle": "Recibe actualizaciones a través de nuestra aplicación"
+        },
+        "partners": {
+          "title": "Notificaciones de socios",
+          "subtitle": "Recibe actualizaciones sobre nuestros socios"
+        }
+      }
+    },
+    "security": {
+      "title": "Centro de Seguridad",
+      "subtitle": "Actualiza la contraseña, revisa sesiones y gestiona tus dispositivos de confianza",
+      "password": {
+        "title": "Actualizar Contraseña",
+        "subtitle": "Nunca compartas tu contraseña con nadie",
+        "updated": "La contraseña ha sido actualizada"
+      },
+      "trustDevices": {
+        "title": "Dispositivos de confianza",
+        "subtitle": "Estos dispositivos no requerirán autenticación de 2 factores",
+        "remove": "Eliminar dispositivo",
+        "info": "Estás eliminando {deviceName} con la dirección IP {deviceIp} de tus dispositivos de confianza"
+      },
+      "sessions": {
+        "title": "Revisar últimas sesiones",
+        "subtitle": "Si encuentras dispositivos o ubicaciones sospechosas, bloquéalos",
+        "recognize": "No reconozco algunos intentos de inicio de sesión",
+        "info": "Si no reconoces intentos de inicio de sesión, ubicaciones o dispositivos, asegúrate de cambiar tu contraseña y verificar si no estás utilizando proxies. Si las sesiones no reconocidas siguen apareciendo, por favor contáctanos."
+      }
+    },
+    "contacts": {
+      "title": "Contactos",
+      "subtitle": "Actualiza tus datos personales, en cualquier momento antes de la próxima actualización obligatoria",
+      "emailAddress": {
+        "title": "Dirección de correo electrónico",
+        "notAvailable": "No disponible en este momento, inténtalo más tarde",
+        "verification": {
+          "title": "Por favor confirma tu dirección de correo electrónico",
+          "sent": "Hemos enviado un token a {emailAddress}",
+          "spam": "Revisa tu carpeta de spam si no encuentras el correo con el token en tu bandeja de entrada",
+          "update": "Si tu correo electrónico {emailAddress} es incorrecto, haz clic en él para actualizarlo"
+        },
+        "update": {
+          "title": "Actualizar dirección de correo electrónico",
+          "subtitle": "¡Siempre mantén tu dirección de correo electrónico actualizada!"
+        }
+      },
+      "phoneNumber": {
+        "title": "Número de teléfono",
+        "notAvailable": "No disponible en este momento, inténtalo más tarde",
+        "create": {
+          "title": "Añade tu número de teléfono",
+          "subtitle": "Mejora la seguridad de tu cuenta añadiendo tu número"
+        },
+        "verification": {
+          "title": "Por favor confirma tu número de teléfono",
+          "sent": "Hemos enviado un token a {phoneNumber}",
+          "update": "Si tu número {phoneNumber} es incorrecto, haz clic en él para actualizarlo"
+        },
+        "update": {
+          "title": "Actualizar número de teléfono",
+          "subtitle": "¡Tu número de teléfono nos ayuda a proteger tu cuenta!"
+        },
+        "remove": {
+          "title": "Eliminar número de teléfono",
+          "sent": "Hemos enviado un token a {phoneNumber}",
+          "update": "Si deseas actualizar tu número, simplemente haz clic en él {phoneNumber}!"
+        }
+      },
+      "app": {
+        "title": "App",
+        "notAvailable": "No disponible en este momento, inténtalo más tarde"
+      }
+    },
+    "settings": {
+      "title": "Configuración",
+      "subtitle": "Gestiona la configuración de tu cuenta",
+      "language": "Idioma",
+      "timezones": "Zonas horarias",
+      "colorSchema": "Esquema de color"
+    }
+  },
+  "components": {
+    "language": {
+      "suggestOthers": "Sugerir otros"
+    },
+    "publickey": {
+      "detected": "-"
+    },
+    "wallet": {
+      "create": {
+        "currency": "-",
+        "blockchain": "-",
+        "token": "-"
+      },
+      "connect": {
+        "currency": "-",
+        "blockchain": "-",
+        "connect": "-",
+        "detected": "-"
+      },
+      "import": {
+        "currency": "-",
+        "blockchain": "-"
+      },
+      "save": {
+        "title": "-",
+        "subtitle": "-",
+        "publicKey": "-",
+        "secretKey": "-",
+        "download": "-",
+        "warning": "-"
+      }
+    },
+    "vReloadPrompt": {
+      "offline": "{appName} está fuera de línea en este momento"
+    }
+  },
+  "authentication": {
+    "notLoggedIn": "No has iniciado sesión",
+    "invalid": "Autenticación inválida",
+    "blocked": "Bloqueado"
+  },
+  "form": {
+    "error": "Recarga la página... ocurrió un error al enviar el formulario"
+  },
+  "password": {
+    "placeholder": "Contraseña",
+    "required": "La contraseña es requerida",
+    "min": "La contraseña debe tener al menos 10 caracteres",
+    "lowercase": "La contraseña debe contener al menos una letra minúscula",
+    "uppercase": "La contraseña debe contener al menos una letra mayúscula",
+    "numeric": "La contraseña debe contener al menos un número",
+    "specialCharacter": "La contraseña debe contener al menos un carácter especial",
+    "match": "Las contraseñas no coinciden",
+    "invalid": "Contraseña inválida",
+    "repeated": "Contraseña repetida"
+  },
+  "currentPassword": {
+    "placeholder": "Contraseña actual"
+  },
+  "newPassword": {
+    "placeholder": "Nueva contraseña"
+  },
+  "confirmPassword": {
+    "placeholder": "Confirmar contraseña"
+  },
+  "listCountry": {
+    "placeholder": "Buscar país"
+  },
+  "listLanguage": {
+    "placeholder": "Buscar idioma"
+  },
+  "listTimezones": {
+    "placeholder": "Buscar zonas horarias"
+  },
+  "firstName": {
+    "placeholder": "Nombre",
+    "invalid": "Nombre inválido",
+    "required": "El nombre es requerido"
+  },
+  "middleName": {
+    "placeholder": "Segundo nombre",
+    "invalid": "Nombre inválido"
+  },
+  "lastName": {
+    "placeholder": "Apellido",
+    "invalid": "Apellido inválido",
+    "required": "El apellido es requerido"
+  },
+  "birthdate": {
+    "placeholder": "Fecha de nacimiento"
+  },
+  "gender": {
+    "placeholder": "Género"
+  },
+  "idNumber": {
+    "placeholder": "Número de identificación"
+  },
+  "taxNumber": {
+    "placeholder": "Número de impuestos"
+  },
+  "address": {
+    "placeholder": "Dirección"
+  },
+  "addressOptional": {
+    "placeholder": "Dirección (opcional)"
+  },
+  "region": {
+    "placeholder": "Región"
+  },
+  "city": {
+    "placeholder": "Ciudad"
+  },
+  "country": {
+    "placeholder": "País",
+    "required": "El país es requerido",
+    "empty": "El país no puede estar vacío",
+    "invalid": "País inválido",
+    "code": {
+      "invalid": "Código de país inválido",
+      "required": "El código de país es requerido"
+    }
+  },
+  "app": {
+    "placeholder": "Aplicación"
+  },
+  "emailAddress": {
+    "placeholder": "Dirección de correo electrónico",
+    "required": "La dirección de correo electrónico es requerida",
+    "invalid": "Correo electrónico inválido",
+    "unique": "Correo electrónico ya en uso",
+    "update": "Actualización exitosa",
+    "verified": "Verificación exitosa"
+  },
+  "phoneNumber": {
+    "placeholder": "Número de teléfono",
+    "required": "El número de teléfono es requerido",
+    "invalid": "Número inválido",
+    "unique": "Número ya en uso",
+    "create": "Creación exitosa",
+    "update": "Actualización exitosa",
+    "verified": "Verificación exitosa",
+    "removed": "Eliminación exitosa"
+  },
+  "token": {
+    "invalid": "Token inválido",
+    "required": "Token requerido",
+    "min": "El token debe tener al menos 6 dígitos",
+    "sent": "Token enviado"
+  },
+  "timezone": {
+    "invalid": "Zona horaria inválida"
+  },
+  "language": {
+    "invalid": "Idioma inválido"
+  },
+  "colorSchema": {
+    "invalid": "Color inválido",
+    "dark": "Oscuro",
+    "light": "Claro"
+  },
+  "nextRequest": {
+    "invalid": "Solicitud inválida, por favor espera unos segundos más"
+  },
+  "method": {
+    "invalid": "Método inválido"
+  },
+  "notifications": {
+    "verifications": {
+      "required": "Opción de verificación faltante"
+    },
+    "login": {
+      "required": "Opción de inicio de sesión faltante"
+    },
+    "updates": {
+      "required": "Opción de actualizaciones faltante"
+    },
+    "email": {
+      "required": "Opción de correo electrónico faltante"
+    },
+    "phone": {
+      "required": "Opción de teléfono faltante"
+    },
+    "app": {
+      "required": "Opción de aplicación faltante"
+    },
+    "partners": {
+      "required": "Opción de socios faltante"
+    }
+  },
+  "pending": {
+    "verifications": "Tienes verificaciones pendientes"
+  },
+  "reCAPTCHA": {
+    "fail": "reCAPTCHA falló. Por favor, inténtalo de nuevo"
+  },
+  "action": {
+    "signup": "Registrarse",
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión",
+    "trustDevice": "No volver a preguntar en este dispositivo",
+    "requestToken": "Solicitar nuevo token",
+    "cancel": "Cancelar",
+    "close": "Cerrar",
+    "submit": "Enviar",
+    "update": "Actualizar",
+    "verify": "Verificar",
+    "remove": "Eliminar",
+    "next": "Siguiente",
+    "verification": {
+      "start": "Iniciar verificación",
+      "continue": "Continuar verificación",
+      "review": "Revisar verificación"
+    },
+    "password": {
+      "forgot": "Olvidé la contraseña",
+      "generate": "Generar contraseña"
+    },
+    "wallet": {
+      "connect": "-",
+      "disconnect": "-",
+      "change": "-",
+      "new": "-",
+      "import": "-",
+      "save": "-",
+      "add": "-",
+      "continueWithoutSave": "-"
+    },
+    "refresh": "Actualizar",
+    "back": "Atrás"
+  },
+  "server": {
+    "tooManyRequests": "Demasiadas solicitudes al servidor",
+    "error": {
+      "unknown": "Error desconocido del servidor"
+    },
+    "payload": {
+      "invalid": "inválido payload"
+    },
+    "csrf": {
+      "invalid": "Token CSRF inválido"
+    }
+  }
+}

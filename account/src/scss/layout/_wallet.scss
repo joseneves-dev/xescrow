@@ -1,0 +1,670 @@
+/*
+    1. Global
+    2. Global dark mode
+    3. Global responsive
+    4. Wallet
+    5. Wallet dark mode
+    6. Wallet responsive
+*/
+
+/* ==========================================================================
+1. Global
+========================================================================== */
+@import "/@src/scss/abstracts/all";
+
+.form-layout {
+  margin: 0 auto;
+
+  &.is-separate {
+    max-width: 1040px;
+
+    .form-outer {
+      background: none;
+      border: none;
+
+      .form-body {
+        display: flex;
+
+        .form-section {
+          flex-grow: 2;
+          padding: 10px;
+          width: 50%;
+
+          .form-section-inner {
+            padding: 40px;
+
+            &.has-padding-bottom {
+              padding-bottom: 60px;
+              height: 100%;
+            }
+
+            > h3 {
+              font-family: var(--font-alt);
+              font-size: 1.2rem;
+              font-weight: 600;
+              color: var(--dark-text);
+              margin-bottom: 30px;
+            }
+
+            .columns {
+              .column {
+                padding-top: 0.25rem;
+                padding-bottom: 0.25rem;
+              }
+            }
+
+            .radio-boxes {
+              display: flex;
+              justify-content: space-between;
+              margin-inline-start: -8px;
+              margin-inline-end: -8px;
+
+              .radio-box {
+                position: relative;
+                margin: 8px;
+
+                &:focus-within {
+                  border-radius: 3px;
+                  outline-offset: var(--accessibility-focus-outline-offset);
+                  outline-width: var(--accessibility-focus-outline-width);
+                  outline-style: var(--accessibility-focus-outline-style);
+                  outline-color: var(--primary);
+                }
+
+                input {
+                  position: absolute;
+                  top: 0;
+                  inset-inline-start: 0;
+                  height: 100%;
+                  width: 100%;
+                  opacity: 0;
+                  cursor: pointer;
+
+                  &:checked {
+                    + .radio-box-inner {
+                      background: var(--primary);
+                      border-color: var(--primary);
+                      box-shadow: var(--primary-box-shadow);
+
+                      .fee,
+                      p {
+                        color: var(--smoke-white);
+                      }
+                    }
+                  }
+                }
+
+                .radio-box-inner {
+                  background: var(--white);
+                  border: 1px solid
+                    color-mix(in oklab, var(--fade-grey), black 3%);
+                  text-align: center;
+                  border-radius: var(--radius);
+                  font-family: var(--font);
+                  font-weight: 600;
+                  font-size: 0.9rem;
+                  transition:
+                    color 0.3s,
+                    background-color 0.3s,
+                    border-color 0.3s,
+                    height 0.3s,
+                    width 0.3s;
+                  padding: 30px 20px;
+
+                  .fee {
+                    font-family: var(--font);
+                    font-weight: 700;
+                    color: var(--dark-text);
+                    font-size: 2.4rem;
+                    line-height: 1;
+                  }
+
+                  p {
+                    font-family: var(--font-alt);
+                  }
+                }
+              }
+            }
+
+            .control {
+              > p {
+                padding-top: 12px;
+
+                > span {
+                  display: block;
+                  font-size: 0.9rem;
+
+                  span {
+                    font-weight: 500;
+                    color: var(--dark-text);
+                  }
+                }
+              }
+            }
+          }
+
+          .form-section-outer {
+            .checkboxes {
+              padding: 16px 0;
+
+              .checkbox {
+                padding: 0;
+                font-size: 0.9rem;
+              }
+            }
+
+            .button-wrap {
+              .button {
+                min-height: 60px;
+                font-size: 1.05rem;
+                font-weight: 600;
+                font-family: var(--font-alt);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+2. Global dark mode
+========================================================================== */
+
+.is-dark {
+  .form-layout {
+    &.is-separate {
+      .form-outer {
+        background: none !important;
+
+        .form-body {
+          .form-section {
+            .form-section-inner {
+              @include app-card--dark;
+
+              > h3 {
+                color: var(--dark-dark-text);
+              }
+
+              .radio-boxes {
+                .radio-box {
+                  input:checked + .radio-box-inner {
+                    background: var(--primary);
+                    border-color: var(--primary);
+                    box-shadow: var(--primary-box-shadow);
+
+                    .fee,
+                    p {
+                      color: var(--smoke-white);
+                    }
+                  }
+
+                  .radio-box-inner {
+                    background: color-mix(
+                      in oklab,
+                      var(--dark-sidebar),
+                      white 2%
+                    );
+                    border-color: color-mix(
+                      in oklab,
+                      var(--dark-sidebar),
+                      white 12%
+                    );
+
+                    .fee {
+                      color: var(--dark-dark-text);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+3. Global responsive
+========================================================================== */
+
+@media only screen and (width <= 767px) {
+  .form-layout {
+    &.is-separate {
+      .form-outer {
+        .form-body {
+          padding-inline-start: 0;
+          padding-inline-end: 0;
+          flex-direction: column;
+
+          .form-section {
+            width: 100%;
+
+            .form-section-inner {
+              padding: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
+  .form-layout {
+    &.is-separate {
+      .form-outer {
+        .form-body {
+          padding-inline-start: 0;
+          padding-inline-end: 0;
+
+          // flex-direction: column;
+
+          .form-section {
+            // width: 100%;
+
+            .form-section-inner {
+              padding: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+4. Wallet
+========================================================================== */
+
+.action-wallet-dropdown {
+  .wallet-icon {
+    display: inline-flex; // Ensures proper alignment of the image inside the icon
+    margin-right: 8px; // Adds space between the icon and the text
+    width: 20px;
+  }
+  span {
+    align-items: center; // Vertically aligns children in the center
+    display: flex;
+    .status {
+      vertical-align: middle;
+    }
+  }
+}
+
+.banking-dashboard-v2 {
+  .dropdown {
+    .dropdown-menu {
+      min-width: 10rem;
+    }
+  }
+
+  .copie {
+    &:hover,
+    &:focus,
+    &.active {
+      .iconify {
+        cursor: pointer;
+        color: var(--primary);
+      }
+    }
+  }
+  .dashboard-card {
+    @include app-s-card;
+
+    .dashboard-header {
+      margin-top: 20px;
+
+      .wallet-dropdown {
+        .dropdown-menu {
+          .dropdown-content {
+            .dropdown-item {
+              width: max-content !important;
+              .item-row {
+                display: flex;
+                align-items: center; // Vertically center the items
+                justify-content: flex-start; // Align items from the left (default)
+
+                .wallet-icon {
+                  display: inline-flex; // Ensures proper alignment of the image inside the icon
+                  margin-right: 8px; // Adds space between the icon and the text
+                  width: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    &.is-card-panel {
+      &.is-grey {
+        background: var(--widget-grey);
+        border: none;
+      }
+
+      .columns {
+        .column {
+          &:first-child {
+            .inner-box {
+              border-inline-end: 1px solid
+                color-mix(in oklab, var(--fade-grey), black 3%);
+            }
+          }
+        }
+      }
+
+      .inner-box {
+        position: relative;
+        margin: 20px;
+        height: calc(100% - 40px);
+
+        &.has-bounds {
+          overflow: hidden;
+        }
+
+        .dropdown {
+          .dropdown-trigger {
+            border: 0px !important;
+          }
+        }
+
+        .box-title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 20px;
+
+          h3 {
+            font-family: var(--font-alt);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--dark-text);
+          }
+
+          .asset-category {
+            display: flex;
+            padding: 12px 0;
+
+            .category {
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              cursor: pointer;
+              padding: 0 15px;
+
+              &:hover,
+              &:focus,
+              &.active {
+                .asset {
+                  .asset-logo {
+                    transform: translateY(-5px);
+
+                    &::before {
+                      border-color: var(--primary);
+                      box-shadow: var(--light-box-shadow);
+                    }
+
+                    .iconify {
+                      color: var(--primary);
+                    }
+                  }
+                }
+
+                .asset-name {
+                  color: var(--primary);
+                }
+              }
+
+              .asset {
+                justify-content: center;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                margin: 10px 0 25px 0;
+
+                .asset-logo {
+                  position: relative; /* To allow proper positioning of pseudo-elements */
+                  display: flex; /* Flexbox to center contents */
+                  justify-content: center; /* Horizontally center the content */
+                  align-items: center; /* Vertically center the content */
+                  width: 50px; /* Set the width of the logo */
+                  height: 50px; /* Set the height of the logo */
+                  flex: 0;
+                  transition: all 0.3s;
+
+                  &::before {
+                    content: "";
+                    width: 50px;
+                    height: 50px;
+                    background-color: var(--white);
+                    border: 1px solid var(--fade-grey);
+                    transform: rotate(45deg);
+                    border-radius: 10px;
+                    position: absolute; /* Absolute positioning to keep it behind content */
+                    top: 50%; /* Center vertically */
+                    left: 50%; /* Center horizontally */
+                    transform: translate(-50%, -50%) rotate(45deg); /* Center and rotate */
+                    transition: all 0.3s;
+                  }
+
+                  span {
+                    position: relative; /* Position the text normally inside the .asset-logo */
+                    z-index: 1; /* Ensure the text appears above the ::before element */
+                    text-align: center; /* Center the text if it's multiline */
+                  }
+                }
+              }
+
+              .asset-name {
+                color: var(--dark-text);
+                font-size: 0.9rem;
+                font-family: var(--font-alt);
+                font-weight: 600;
+                text-align: center;
+                transition: color 0.3s;
+              }
+            }
+          }
+
+          .field {
+            top: -7px;
+            inset-inline-end: 0;
+            z-index: 5;
+            min-width: 200px;
+
+            .multiselect {
+              .multiselect-input {
+                .multiselect-single-label {
+                  color: var(--light-text);
+                }
+              }
+
+              .multiselect-options {
+                inset-inline-start: unset !important;
+                min-width: 180px;
+              }
+            }
+          }
+        }
+
+        .card-balance-wrap {
+          display: flex;
+          flex-direction: column;
+          height: calc(100% - 60px);
+          padding: 0 15px;
+          .v-loader-wrapper {
+            justify-content: unset !important;
+          }
+          .card-balance {
+            span {
+              display: block;
+              color: var(--title-text);
+
+              &:first-child {
+                font-weight: 700;
+                font-size: 2.4rem;
+              }
+
+              &:nth-child(2) {
+                font-size: 1rem;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+5. Wallet dark mode
+========================================================================== */
+
+.is-dark {
+  .banking-dashboard-v2 {
+    .dashboard-card {
+      @include app-card--dark;
+
+      &.is-card-panel {
+        background: color-mix(in oklab, var(--dark-sidebar), white 6%);
+
+        .inner-box {
+          border-color: color-mix(
+            in oklab,
+            var(--dark-sidebar),
+            white 12%
+          ) !important;
+
+          .box-title {
+            .asset-category {
+              .category {
+                &:hover,
+                &.active {
+                  .asset {
+                    .asset-logo {
+                      &::before {
+                        border-color: var(--primary) !important;
+                      }
+
+                      .iconify {
+                        color: var(--primary);
+                      }
+                    }
+                  }
+
+                  .asset-name {
+                    color: var(--primary);
+                  }
+                }
+
+                .asset {
+                  .asset-logo {
+                    &::before {
+                      background: color-mix(
+                        in oklab,
+                        var(--dark-sidebar),
+                        white 6%
+                      ) !important;
+                      border-color: color-mix(
+                        in oklab,
+                        var(--dark-sidebar),
+                        white 12%
+                      ) !important;
+                    }
+                  }
+                }
+
+                .asset-name {
+                  color: var(--dark-dark-text);
+                }
+              }
+            }
+
+            h3 {
+              color: var(--dark-dark-text);
+            }
+          }
+
+          .card-balance-wrap {
+            .card-balance {
+              span {
+                color: var(--white);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+6. Wallet responsibe
+========================================================================== */
+
+@media only screen and (width <= 767px) {
+  .banking-dashboard-v2 {
+    .dashboard-card {
+      &.is-card-panel {
+        overflow: hidden;
+        padding: 10px;
+
+        .inner-box {
+          border-inline-end: none !important;
+
+          .asset-category {
+            flex-wrap: wrap;
+
+            .category {
+              min-width: 25% !important;
+              margin-bottom: 12px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
+  .banking-dashboard-v2 {
+    .dashboard-card {
+      &.is-card-panel {
+        .inner-box {
+          border-inline-end: none !important;
+
+          .card-balance-wrap {
+            .card-balance {
+              margin-bottom: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
+  .banking-dashboard-v2 {
+    .dashboard-card {
+      &.is-card-panel {
+        .inner-box {
+          .card-balance-wrap {
+            .card-balance {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

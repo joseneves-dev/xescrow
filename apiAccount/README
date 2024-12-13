@@ -1,0 +1,19 @@
+This is an API built using ExpressJS, TypeScript, Sequelize, and Redis. The API is configured to run on AWS with ElasticCache integration.
+
+Run the following command to install the required dependencies and run the app:
+npm install
+
+Before starting the application, you need to compile the TypeScript code to JavaScript. Run:
+npm run build
+
+After building the application, start it using the following command:
+npm run start
+
+AWS ElasticCache Configuration
+The project contains a folder named .ebextensions, which holds the configuration files necessary for setting up AWS ElasticCache. These files are used to configure the environment when deploying to AWS Elastic Beanstalk.
+
+Important Notes:
+Include configuration files such as elasticache.config and options.config. These files define the settings required for your AWS ElasticCache instance and should be updated with the correct configurations for your specific environment.
+This will automatically apply the configurations when the application is deployed.
+
+Deployment: When deploying your application to AWS, ensure that the .ebextensions folder is included in your bundle (e.g., in the zip file), also locales folder should be included in the bundle. 

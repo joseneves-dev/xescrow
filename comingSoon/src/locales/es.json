@@ -1,0 +1,57 @@
+{
+  "pages":{
+    "signup":{
+      "subtitle":"Su servicio de fideicomiso P2P de confianza en la Blockchain",
+      "description":"Xescrow.app es una plataforma de pagos descentralizada diseñada para transacciones seguras. Utilizando un servicio de escrow basado en contratos inteligentes, permite negociar e intercambiar activos con confianza, eliminando la necesidad de intermediarios. Impulsado por la transparencia y seguridad de la tecnología blockchain, garantiza que tus transacciones sean seguras, eficientes y confiables.",
+      "subscribe":{
+        "subscribe": "Suscríbase a continuación para ser el primero en saber cuándo lanzamos.",
+        "success": "Suscripción exitosa."
+      },
+      "unsubscribe":{
+        "unsubscribe": "Agregue su correo electrónico a continuación para darse de baja.",
+        "success": "Cancelación de suscripción exitosa."
+      }
+    },
+    "notFound":{
+      "title": "Página no encontrada",
+      "heading": "No pudimos encontrar esa página",
+      "body":  "Parece que no pudimos encontrar esa página. Intente nuevamente o contacte a un administrador si el problema persiste."
+    }
+  },
+  "form":{
+    "error": "Recargar la página... datos inválidos"
+  },
+  "token":{
+    "required": "Se requieren datos del token",
+    "invalid":  "Token no válido"
+  },
+  "language":{
+    "invalid": "Idioma no válido"
+  },
+  "emailAddress":{
+    "required": "El correo electrónico es obligatorio",
+    "invalid": "Correo electrónico inválido",
+    "unique": "El correo electrónico ya está suscrito",
+    "placeholder": "Correo electrónico"
+  },
+  "server":{
+    "csrf.invalid": "Token CSRF inválido.",
+    "too-many-request": "Demasiadas solicitudes al servidor.",
+    "error.unknown": "Error desconocido en el servidor."
+  },
+  "reCAPTCHA":{
+     "fail": "El reCAPTCHA ha fallado. Por favor, inténtelo de nuevo."
+  },
+  "action":{
+    "back": "Llévame de vuelta",
+    "subscribe": "Suscribirse",
+    "unsubscribe": "Darse de baja"
+  },
+  "components":{
+    "v-reload-prompt":{
+      "offline": "{appName} está desconectado en este momento",
+      "need-refresh":  "Actualizar",
+      "close-button": "Cerrar"
+    }
+  }
+}

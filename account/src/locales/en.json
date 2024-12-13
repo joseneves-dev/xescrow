@@ -1,0 +1,585 @@
+{
+  "footer": {
+    "description": "Xescrow.app is a decentralized payment platform designed for secure transactions, powered by the transparency and security of the Solana blockchain.",
+    "menu": {
+      "subscribe": "Subscribe"
+    },
+    "copyright": "Copyright {year}, Xescrow - P2P transactions. All rights reserved."
+  },
+  "menu": {
+    "dashboard": "Dashboard",
+    "wallet": "Wallet",
+    "account": "Account",
+    "escrow": "Escrow",
+    "helpCenter": "Help Center",
+    "back": "Back"
+  },
+  "subMenu": {
+    "details": "Details",
+    "contacts": "Contacts",
+    "security": "Security",
+    "settings": "Settings",
+    "notifications": "Notifications"
+  },
+  "walletMenu": {
+    "transfer": "Transfer",
+    "airdrop": "Airdrop",
+    "transactions": "Transactions",
+    "settings": "Settings",
+    "manage": "Manage"
+  },
+  "pages": {
+    "signup": {
+      "title": "Hello",
+      "subtitle": "Signup now and experience the reliability of blockchain",
+      "success": "Successfully signed up",
+      "invalid": "Invalid",
+      "notAvailable": "Not available at the moment, try later"
+    },
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Please sign in to continue.",
+      "invalid": "Invalid Login",
+      "notAvailable": "Not available at the moment, try later"
+    },
+    "forgotPassword": {
+      "title": "Forgot Password",
+      "subtitle": "Request a new password update",
+      "success": "Successfully sent email with instructions",
+      "sent": {
+        "title": "Email Sent Successfully",
+        "subtitle": "Follow the instructions we sent to your email to reset your password"
+      }
+    },
+    "resetPassword": {
+      "title": "Reset Password",
+      "subtitle": "Set a new password for your account",
+      "success": "Password successfully updated"
+    },
+    "secondFactor": {
+      "invalid": "Invalid 2FA",
+      "notAvailable": "Not available at the moment, try later",
+      "notification": {
+        "error": "Error sending notification"
+      },
+      "token": {
+        "error": "Error sending token"
+      },
+      "app": {
+        "sendNotification": "Send new notification",
+        "check": "Check your app",
+        "sent": "We have sent a notification to the app..."
+      },
+      "emailAddress": {
+        "sendToken": "Send a new token to the email ({emailAddress})",
+        "check": "Check your email",
+        "sent": "We have sent an email with a 6-digit token..."
+      },
+      "phoneNumber": {
+        "sendToken": "Send a new token to the phone number ({phoneNumber})",
+        "check": "Check your phone",
+        "sent": "We have sent a text message with a 6-digit token..."
+      }
+    },
+    "help": {},
+    "dashboard": {
+      "welcome": "Welcome back, {userName}"
+    },
+    "wallet": {
+      "create": {
+        "title": "Welcome, let's start!",
+        "subtitle": "Chose one of the options bellow to get start!",
+        "newAccount": {
+          "title": "Create a new Account"
+        },
+        "connect": {
+          "title": "Connect to your wallet"
+        },
+        "import": {
+          "title": "Import an exting account"
+        }
+      },
+      "resume": {
+        "connected": "Connected",
+        "disconnected": "Disconnected"
+      },
+      "transfer": {
+        "success": "Transaction sent succefully"
+      },
+      "settings": {
+        "defaultAccount": "Default",
+        "defaultCurrency": "Default currency",
+        "infoPublicKey": "Info public key",
+        "secretKey": "Secret key",
+        "rename": "Rename",
+        "remove": "Remove"
+      },
+      "manage": {
+        "title": "Create a new account, new account or import a existint one!",
+        "newAccount": "Create a new account",
+        "newTokenAccount": "Create a new account",
+        "connect": "Connect to a existing wallet",
+        "import": "import a existing account"
+      }
+    },
+    "notFound": {
+      "title": "Page Not Found",
+      "heading": "We couldn't find that page",
+      "body": "It seems we couldn't find that page. Please try again or contact an administrator if the problem persists."
+    },
+    "underConstruction": "This page is under construction",
+    "personal": {
+      "start": {
+        "heading": "Please confirm your account",
+        "body": "Hey {name}, start verifying your account! Get the maximum out of Xescrow.app. Verifying your account will allow faster processing in case of disputes."
+      },
+      "continue": {
+        "heading": "Continue your account verification",
+        "body": "Hey {name}, you have pending verification for your account! Get the maximum out of Xescrow.app. Verifying your account will allow faster processing in case of disputes."
+      },
+      "review": {
+        "heading": "Review your documents",
+        "body": "Hey {name}, you have pending documents! Get the maximum out of Xescrow.app. Verifying your account will allow faster processing in case of disputes."
+      },
+      "identityStatement": {
+        "title": "Identity Statement",
+        "subtitle": "The identity statement is a document confirming your verification status and includes your personal information such as name and address."
+      },
+      "title": "Personal Information",
+      "subtitle": "Add, update, or remove your contacts",
+      "identification": "Identification",
+      "address": "Address"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "subtitle": "Update your account notifications",
+      "account": {
+        "title": "Account Notifications",
+        "subtitle": "This is how others will recognize you",
+        "updated": "Account notifications have been updated",
+        "verifications": {
+          "title": "Verifications",
+          "subtitle": "Receive warnings for pending verifications"
+        },
+        "login": {
+          "title": "Login",
+          "subtitle": "Receive warnings every time someone logs into your account"
+        }
+      },
+      "lowPriority": {
+        "title": "Low-priority notifications:",
+        "subtitle": "Keep an eye on new updates and features released by us",
+        "updated": "Account notifications have been updated",
+        "updates": {
+          "title": "Updates",
+          "subtitle": "Receive updates about us"
+        }
+      },
+      "marketing": {
+        "title": "Marketing notifications",
+        "subtitle": "Get information about exclusive offers and partners",
+        "updated": "Marketing notifications have been updated",
+        "emailAddress": {
+          "title": "Email Notifications",
+          "subtitle": "Receive updates via email"
+        },
+        "phoneNumber": {
+          "title": "Text Message Notifications",
+          "subtitle": "Receive updates via text message"
+        },
+        "app": {
+          "title": "App Notifications",
+          "subtitle": "Receive updates via our app"
+        },
+        "partners": {
+          "title": "Partners Notifications",
+          "subtitle": "Receive updates about our partners"
+        }
+      }
+    },
+    "security": {
+      "title": "Security Center",
+      "subtitle": "Update password, review sessions, and manage your trusted devices",
+      "password": {
+        "title": "Update Password",
+        "subtitle": "Never share your password with anyone",
+        "updated": "Password has been updated"
+      },
+      "trustDevices": {
+        "title": "Trusted Devices",
+        "subtitle": "These devices will not require 2-factor authentication",
+        "remove": "Remove device",
+        "info": "You are removing {deviceName} with the IP address {deviceIp} from your trusted devices"
+      },
+      "sessions": {
+        "title": "Review last sessions",
+        "subtitle": "If you find any suspicious devices or locations, block them",
+        "recognize": "I don't recognize some login attempts",
+        "info": "If you don’t recognize any login attempts, locations, or devices, make sure to change your password and check if you're not using proxies. If unrecognized sessions keep appearing, please contact us."
+      }
+    },
+    "contacts": {
+      "title": "Contacts",
+      "subtitle": "Update your personal data, anytime before the next mandatory update",
+      "emailAddress": {
+        "title": "Email Address",
+        "notAvailable": "Not available at the moment, try later",
+        "verification": {
+          "title": "Please confirm your email address",
+          "sent": "We have sent a token to {emailAddress}",
+          "spam": "Check your spam folder if you don’t find the email with the token in your inbox",
+          "update": "If your email {emailAddress} is incorrect, click on it to update!"
+        },
+        "update": {
+          "title": "Update email address",
+          "subtitle": "Always keep your email address updated!"
+        }
+      },
+      "phoneNumber": {
+        "title": "Phone Number",
+        "notAvailable": "Not available at the moment, try later",
+        "create": {
+          "title": "Add your phone number",
+          "subtitle": "Enhance your account security by adding your number"
+        },
+        "verification": {
+          "title": "Please confirm your phone number",
+          "sent": "We have sent a token to {phoneNumber}",
+          "update": "If your number {phoneNumber} is incorrect, click on it to update!"
+        },
+        "update": {
+          "title": "Update phone number",
+          "subtitle": "Your phone number helps us protect your account!"
+        },
+        "remove": {
+          "title": "Remove phone number",
+          "sent": "We have sent a token to {phoneNumber}",
+          "update": "If you want to update your number, just click on it {phoneNumber}!"
+        }
+      },
+      "app": {
+        "title": "App",
+        "notAvailable": "Not available at the moment, try later"
+      }
+    },
+    "settings": {
+      "title": "Settings",
+      "subtitle": "Manage your account settings",
+      "language": "Language",
+      "timezones": "Timezones",
+      "colorSchema": "Color scheme"
+    }
+  },
+  "components": {
+    "language": {
+      "suggestOthers": "Suggest others"
+    },
+    "publickey": {
+      "detected": "has been detected"
+    },
+    "wallet": {
+      "createAccount": {
+        "title": "Create Account",
+        "currency": "Set a default currency to your account",
+        "blockchain": "Chose an available blockchain",
+        "token": "Chose an available token"
+      },
+      "createTokenAccount": {
+        "title": "Create Token Account"
+      },
+      "connect": {
+        "title": "Connect wallet",
+        "currency": "Set a default currency to your account",
+        "blockchain": "Chose a available blockchain",
+        "wallet": " Chose a available wallet",
+        "connect": "Connect Wallet",
+        "detected": "Detected"
+      },
+      "import": {
+        "title": "Import wallet",
+        "currency": "Set a default currency to your account",
+        "blockchain": "Chose a available blockchain"
+      },
+      "save": {
+        "title": "Congratualation your new {symbol} and {symbol} has been created!",
+        "subtitle": "Please save your secreatkey, in a safe local, don't share with anyone, otherway you will lost the access to your funds!",
+        "publicKey": "Publickey",
+        "secretKey": "SecretKey",
+        "download": "Download the Publickey and secretKey",
+        "warning": "By default we don't keep your secretKey saved, althougt you can save clicking bellow in save secretKey."
+      },
+      "infoAccount": {
+        "balance": "Balance"
+      },
+      "secretKey": {
+        "title": "Manage your secret key",
+        "subtitle": "Always be careful, don't share with anyone. Please be careful and always save offline the secretkey",
+        "remove": {
+          "send": "Send verification token",
+          "update": "If you want to update your contacts just update her"
+        },
+        "view": {
+          "send": "Send verification token",
+          "update": "If you want to update your contacts just update her",
+          "saveSecretKey": "Please save your secreatkey, in a safe local, don't share with anyone, otherway you will lose your funds!",
+          "download": "Downlowd publick and secretKey",
+          "publicKey": "Public key",
+          "secretKey": "Secret key"
+        },
+        "add": {
+          "title": "Save secret key",
+          "subtitle": "Please save your secreatkey, in a safe local, don't share with anyone, otherway you will lost the access to your funds!",
+          "publicKey": "Public key",
+          "secretKey": "Secret key"
+        }
+      },
+      "account": {
+        "remove": {
+          "title": "Confirm you want to remove",
+          "confirm": "Confirm you want to remove",
+          "send": "Send verification token",
+          "subtitle": "if you want to update your contacts just update her"
+        },
+        "rename": {
+          "title": "Confirm you want to rename",
+          "subtitle": "Please confirm you want to rename the account below"
+        }
+      }
+    },
+    "vReloadPrompt": {
+      "offline": "{appName} is offline at the moment"
+    }
+  },
+  "authentication": {
+    "notLoggedIn": "Not logged in",
+    "invalid": "Invalid authentication",
+    "blocked": "Blocked"
+  },
+  "form": {
+    "error": "Reload page... error occurred while submitting the form"
+  },
+  "password": {
+    "placeholder": "Password",
+    "required": "Password is required",
+    "min": "Password must be at least 10 characters long",
+    "lowercase": "Password must contain at least one lowercase letter",
+    "uppercase": "Password must contain at least one uppercase letter",
+    "numeric": "Password must contain at least one number",
+    "specialCharacter": "Password must contain at least one special character",
+    "match": "Passwords don't match",
+    "invalid": "Invalid password",
+    "repeated": "Repeated password"
+  },
+  "currentPassword": {
+    "placeholder": "Current password"
+  },
+  "newPassword": {
+    "placeholder": "New password"
+  },
+  "confirmPassword": {
+    "placeholder": "Confirm password"
+  },
+  "listCountry": {
+    "placeholder": "Search country"
+  },
+  "listLanguage": {
+    "placeholder": "Search language"
+  },
+  "listTimezones": {
+    "placeholder": "Search timezones"
+  },
+  "firstName": {
+    "placeholder": "First Name",
+    "invalid": "Invalid name",
+    "required": "First name is required"
+  },
+  "middleName": {
+    "placeholder": "Middle Name",
+    "invalid": "Invalid name"
+  },
+  "lastName": {
+    "placeholder": "Last Name",
+    "invalid": "Invalid name",
+    "required": "Last name is required"
+  },
+  "birthdate": {
+    "placeholder": "Birthdate"
+  },
+  "gender": {
+    "placeholder": "Gender"
+  },
+  "idNumber": {
+    "placeholder": "ID Number"
+  },
+  "taxNumber": {
+    "placeholder": "Tax Number"
+  },
+  "address": {
+    "placeholder": "Address"
+  },
+  "addressOptional": {
+    "placeholder": "Address (optional)"
+  },
+  "region": {
+    "placeholder": "Region"
+  },
+  "city": {
+    "placeholder": "City"
+  },
+  "country": {
+    "placeholder": "Country",
+    "required": "Country is required",
+    "empty": "Country can't be empty",
+    "invalid": "Invalid country",
+    "code": {
+      "invalid": "Invalid country code",
+      "required": "Country code is required"
+    }
+  },
+  "app": {
+    "placeholder": "App"
+  },
+  "emailAddress": {
+    "placeholder": "E-mail Address",
+    "required": "Email address is required",
+    "invalid": "Invalid email",
+    "unique": "Email already in use",
+    "update": "Successfully updated",
+    "verified": "Successfully verified"
+  },
+  "phoneNumber": {
+    "placeholder": "Phone Number",
+    "required": "Phone number is required",
+    "invalid": "Invalid number",
+    "unique": "Number already in use",
+    "create": "Successfully created",
+    "update": "Successfully updated",
+    "verified": "Successfully verified",
+    "removed": "Successfully removed"
+  },
+  "wallet": {
+    "invalid": "Invalid wallet"
+  },
+  "publicKey": {
+    "required": "Public key is required",
+    "invalid": "Invalid public key",
+    "duplicated": "Public key duplicated"
+  },
+  "secretKey": {
+    "required": "Secret key is required",
+    "invalid": "Invalid secret key"
+  },
+  "rename": {
+    "required": "Public key is required"
+  },
+  "blockchain": {
+    "invalid": "Invalid blockcahin",
+    "token": {
+      "required": "You have to select a token accoun"
+    }
+  },
+  "currency": {
+    "invalid": "Invalid currency"
+  },
+  "token": {
+    "invalid": "Invalid token",
+    "required": "Token is required",
+    "min": "Token must be at least 6 digits",
+    "sent": "Token has been sent"
+  },
+  "timezone": {
+    "invalid": "Invalid timezone"
+  },
+  "language": {
+    "invalid": "Invalid language"
+  },
+  "colorSchema": {
+    "invalid": "Invalid color",
+    "dark": "Dark",
+    "light": "Light"
+  },
+  "nextRequest": {
+    "invalid": "Invalid request, please wait a few more seconds"
+  },
+  "method": {
+    "invalid": "Invalid method",
+    "required": "Missing method"
+  },
+  "notifications": {
+    "verifications": {
+      "required": "Missing verification option"
+    },
+    "login": {
+      "required": "Missing login option"
+    },
+    "updates": {
+      "required": "Missing updates option"
+    },
+    "email": {
+      "required": "Missing email option"
+    },
+    "phone": {
+      "required": "Missing phone option"
+    },
+    "app": {
+      "required": "Missing app option"
+    },
+    "partners": {
+      "required": "Missing partners option"
+    }
+  },
+  "pending": {
+    "verifications": "You have pending verifications"
+  },
+  "reCAPTCHA": {
+    "fail": "reCAPTCHA failed. Please try again"
+  },
+  "action": {
+    "signup": "Signup",
+    "login": "Login",
+    "logout": "Logout",
+    "trustDevice": "Don't ask again on this device",
+    "requestToken": "Request new token",
+    "cancel": "Cancel",
+    "close": "Close",
+    "submit": "Submit",
+    "update": "Update",
+    "verify": "Verify",
+    "remove": "Remove",
+    "next": "Next",
+    "verification": {
+      "start": "Start verification",
+      "continue": "Continue verification",
+      "review": "Review verification"
+    },
+    "password": {
+      "forgot": "Forgot password",
+      "generate": "Generate password"
+    },
+    "wallet": {
+      "connect": "Connect Wallet",
+      "disconnect": "Disconnect Wallet",
+      "change": "Change Wallet",
+      "newAccount": "New Account",
+      "newTokenAccount": "New Account",
+      "import": "Import Account",
+      "save": "Save secret key",
+      "add": "Add account",
+      "continueWithoutSave": "Continue without save"
+    },
+    "refresh": "Refresh",
+    "back": "Back"
+  },
+  "server": {
+    "tooManyRequests": "Too many requests to the server",
+    "error": {
+      "unknown": "Unknown server error"
+    },
+    "payload": {
+      "invalid": "Invalid payload"
+    },
+    "csrf": {
+      "invalid": "Invalid CSRF token"
+    }
+  }
+}

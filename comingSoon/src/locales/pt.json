@@ -1,0 +1,57 @@
+{
+  "pages":{
+    "signup":{
+      "subtitle":"Serviço escrow P2P na Blockchain",
+      "description":"Xescrow.app é uma plataforma de pagamentos descentralizada projetada para transações seguras. Utilizando um serviço de escrow baseado em contratos inteligentes, permite-lhe negociar e trocar ativos com confiança, eliminando a necessidade de intermediários. Alimentado pela transparência e segurança da tecnologia blockchain, garante que as suas transações sejam seguras, eficientes e fiáveis.",
+      "subscribe":{
+        "subscribe": "Inscreva-se abaixo para ser o primeiro a saber quando lançarmos.",
+        "success": "Inscrição realizada com sucesso."
+      },
+      "unsubscribe":{
+        "unsubscribe": "Adicione seu e-mail abaixo para cancelar a inscrição.",
+        "success": "Cancelamento de inscrição realizado com sucesso."
+      }
+    },
+    "notFound":{
+      "title": "Página não encontrada",
+      "heading": "Não conseguimos encontrar essa página",
+      "body": "Parece que não conseguimos encontrar essa página. Por favor, tente novamente ou entre em contato com um administrador se o problema persistir."
+    }
+  },
+  "form":{
+    "error": "Recarregar página... dados inválidos"
+  },
+  "token":{
+    "required": "Os dados do token são obrigatórios",
+    "invalid": "Token inválido"
+  },
+  "language":{
+    "invalid": "Idioma inválido"
+  },
+  "emailAddress":{
+    "required": "O e-mail é obrigatório",
+    "invalid": "E-mail inválido",
+    "unique": "O e-mail já está inscrito",
+    "placeholder":"Endereço de e-mail"
+  },
+  "server":{
+    "csrf.invalid": "Token CSRF inválido.",
+    "too-many-request": "Muitas solicitações ao servidor.",
+    "error.unknown": "Erro desconhecido no servidor."
+  },
+  "reCAPTCHA":{
+     "fail": "reCAPTCHA falhou. Por favor tente novamente."
+  },
+  "action":{
+    "back": "Voltar",
+    "subscribe": "Inscrever-se",
+    "unsubscribe": "Cancelar inscrição"
+  },
+  "components":{
+    "v-reload-prompt":{
+      "offline": "{appName} está offline no momento",
+      "need-refresh": "Atualizar",
+      "close-button": "Fechar"
+    }
+  }
+}

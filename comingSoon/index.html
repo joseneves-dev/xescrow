@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <link
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="/vendors/font-awesome-v5.css"
+    />
+    <link
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="/vendors/line-icons-pro.css"
+    />
+
+    <script>
+       ;(function () {
+        const prefersDark =
+          window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if ((prefersDark !== 'light'))
+          document.documentElement.classList.toggle('is-dark', true)
+      })()
+    </script>
+  </head>
+  <body >    
+    <div id="app" class="app-wrapper"></div>
+    <script type="module" src="/src/entry-client.ts"></script>
+  </body>
+</html>

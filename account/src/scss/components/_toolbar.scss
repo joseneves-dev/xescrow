@@ -1,0 +1,54 @@
+/*
+    1. List Flex Toolbar
+*/
+
+/* ==========================================================================
+1. List Flex Toolbar
+========================================================================== */
+
+.list-flex-toolbar {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &.is-reversed {
+    flex-direction: row-reverse;
+
+    .control {
+      margin-inline-start: auto;
+    }
+
+    .tabs-inner {
+      margin-inline-start: 0;
+    }
+  }
+
+  .field {
+    margin-bottom: 0;
+  }
+
+  .list-info {
+    span {
+      font-family: var(--font);
+      color: var(--light-text);
+    }
+  }
+
+  .buttons {
+    margin-inline-start: auto;
+    margin-bottom: 0;
+
+    .v-button {
+      margin-bottom: 0;
+    }
+  }
+
+  .tabs-inner {
+    margin-inline-start: auto;
+
+    .tabs {
+      margin-bottom: 0;
+      min-width: 170px;
+    }
+  }
+}

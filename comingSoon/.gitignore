@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules/
+
+# VSCode
+.vscode/
+
+# Environment files
+.env
+
+# Build output
+dist/
+build/
+
+# Vite build output
+/node_modules/.vite

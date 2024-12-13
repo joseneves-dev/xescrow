@@ -1,0 +1,57 @@
+{
+  "pages":{
+    "signup":{
+      "subtitle":"Your Trustworthy P2P Escrow on the Blockchain",
+      "description":"Xescrow.app is a decentralized payment platform designed for secure, transactions. Using a smart contract-based escrow service, it allows you to trade and exchange assets with confidence, eliminating the need for intermediaries. Powered by the transparency and security of blockchain technology, it ensures that your transactions are safe, efficient, and trustworthy.",
+      "subscribe":{
+        "subscribe": "Sign up below to be the first to know when we launch.",
+        "success": "Subscription successful."
+      },
+      "unsubscribe":{
+        "unsubscribe": "Add your email below to unsubscribe.",
+        "success": "Unsubscription successful."
+      }
+    },
+    "notFound":{
+      "title": "Page not found",
+      "heading": "We couldn't find that page",
+      "body": "Looks like we couldn't find that page. Please try again or contact an administrator if the problem persists."
+    }
+  },
+  "form":{
+    "error": "Reload page... invalid data"
+  },
+  "token":{
+    "required": "Token data is required",
+    "invalid": "Invalid token."
+  },
+  "language":{
+    "invalid": "Invalid language"
+  },
+  "emailAddress":{
+    "required": " Email is required",
+    "invalid": "Invalid email",
+    "unique": "Email already is subscribed",
+    "placeholder":"Email Address"
+  },
+  "server":{
+    "csrf.invalid": "Invalid CSRF token.",
+    "too-many-request": "Too many requests to the server.",
+    "error.unknown": "Unknown server error."
+  },
+  "reCAPTCHA":{
+     "fail": "reCAPTCHA failed. Please try again."
+  },
+  "action":{
+    "back": "Back",
+    "subscribe": "Subscribe",
+    "unsubscribe": "Unsubscribe"
+  },
+  "components":{
+    "v-reload-prompt":{
+      "offline": "{appName} is offline at moment",
+      "need-refresh": "Refresh",
+      "close-button": "Close"
+    }
+  }
+}

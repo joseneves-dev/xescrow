@@ -1,0 +1,112 @@
+.modal-card {
+  .action-page-wrapper {
+    //display: block !important;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .wrapper-inner {
+    .action-box {
+      border: 0 !important;
+    }
+  }
+}
+
+.action-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+
+  .wrapper-inner {
+    .action-box {
+      @include app-s-card;
+      .box-content {
+        margin: 20px;
+        text-align: center;
+        font-family: var(--font);
+
+        img {
+          display: block;
+          width: 100%;
+          max-width: 220px;
+          margin: 0 auto 8px;
+
+          &.is-larger {
+            max-width: 300px;
+          }
+        }
+
+        h3 {
+          font-family: var(--font-alt);
+          font-weight: 600;
+
+          span {
+            color: var(--primary);
+          }
+        }
+
+        .buttons {
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          padding-top: 5px;
+
+          .button {
+            margin: 0 4px;
+            min-width: 150px;
+            height: 36px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .action-page-wrapper {
+    .wrapper-inner {
+      .action-box {
+        @include app-card--dark;
+      }
+    }
+
+    .wrapper-outer {
+      @include app-card--dark;
+    }
+  }
+}
+
+@media only screen and (width <= 767px) {
+  .action-page-wrapper {
+    .wrapper-inner {
+      .action-box {
+        .box-content {
+          .buttons {
+            .button {
+              min-width: 130px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
+  .action-page-wrapper {
+    .wrapper-inner {
+      .action-box {
+        .box-content {
+          .buttons {
+            .button {
+              min-width: 130px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
