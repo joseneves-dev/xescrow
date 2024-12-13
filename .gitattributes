@@ -1,0 +1,4 @@
+*.vue linguist-language=Vue
+*.ts linguist-language=TypeScript
+*.rs linguist-language=Rust
+*.js linguist-language=JavaScript
